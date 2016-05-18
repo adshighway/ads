@@ -39,7 +39,7 @@ class app_data extends app_core {
         }
 
         if ($currentHost == '127.0.0.1') {
-
+              
             $host = '127.0.0.1';
             $database = 'general';
             $this->mongoDB = $database;
@@ -56,7 +56,6 @@ class app_data extends app_core {
             $this->mongoActive = TRUE;
             }catch(Exception $e){
                 $this->mongoActive = FALSE;
-                var_dump($e);
                 $this->helper->toLog($e);
             }
         } else {
