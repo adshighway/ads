@@ -9,7 +9,10 @@ foreach (glob("./*/*.php") as $filename)
 include $filename;
 }
 
-$HTML =new app_ads();
+$CORE    = new app_core();
 
+$GENERAL = new general();
+
+$DATA = new app_data($CORE,$GENERAL);
 
 ?>

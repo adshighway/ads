@@ -1,0 +1,6 @@
+exception 'MongoConnectionException' with message 'Failed to connect to: 127.0.0.1:27017: Authentication failed on database 'general' with username 'general': auth failed' in /var/www/ads/app/data.php:53
+Stack trace:
+#0 /var/www/ads/app/data.php(53): MongoClient->__construct('mongodb://127.0...', Array)
+#1 /var/www/ads/app/data.php(22): app_data->connection()
+#2 /var/www/ads/index.php(16): app_data->__construct(Object(app_core), Object(general))
+#3 {main}

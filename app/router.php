@@ -7,13 +7,10 @@
  */
 
 /**
- * Description of ads
+ * Description of router
  *
  * @author aromerov
  */
-class ads {
+class app_router {
     //put your code here
-    public function show(){
-        
-    }
 }
